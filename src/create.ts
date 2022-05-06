@@ -11,7 +11,7 @@ async function main() {
     }
   })
 
-  console.log('result', result);
+  console.log('result', result)
 }
 
 main()
