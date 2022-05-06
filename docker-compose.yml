@@ -1,0 +1,14 @@
+version: "3"
+services:
+  tad:
+    image: postgres:9.6
+    container_name: "postgres"
+    environment:
+      - POSTGRES_DB=prisma-io-ignite
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+      - TZ=GMT
+    volumes:
+      - "./data/postgres:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
